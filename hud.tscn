@@ -57,5 +57,47 @@ text = "Start"
 
 [node name="MessageTimer" type="Timer" parent="." unique_id=1232005531]
 
+[node name="MobileControls" type="Control" parent="."]
+visible = false
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -136.0
+offset_right = 184.0
+offset_bottom = -16.0
+grow_vertical = 0
+mouse_filter = 2
+
+[node name="Up" type="Button" parent="MobileControls"]
+offset_left = 58.0
+offset_right = 110.0
+offset_bottom = 52.0
+focus_mode = 0
+text = "↑"
+
+[node name="Left" type="Button" parent="MobileControls"]
+offset_top = 58.0
+offset_right = 52.0
+offset_bottom = 110.0
+focus_mode = 0
+text = "←"
+
+[node name="Down" type="Button" parent="MobileControls"]
+offset_left = 58.0
+offset_top = 58.0
+offset_right = 110.0
+offset_bottom = 110.0
+focus_mode = 0
+text = "↓"
+
+[node name="Right" type="Button" parent="MobileControls"]
+offset_left = 116.0
+offset_top = 58.0
+offset_right = 168.0
+offset_bottom = 110.0
+focus_mode = 0
+text = "→"
+
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="timeout" from="MessageTimer" to="." method="_on_message_timer_timeout"]

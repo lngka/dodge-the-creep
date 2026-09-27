@@ -2,3 +2,7 @@
 .godot/
 /android/
 node_modules/
+
+# Godot import sidecars (incl. under dist/)
+*.import
+
